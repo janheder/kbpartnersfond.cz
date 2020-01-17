@@ -1,0 +1,37 @@
+#cookie-bar{
+    background: $black;
+}
+#cookie-bar a {
+    border-radius: 0px;
+}
+#cookie-bar .cb-enable {
+    background: $brand-primary;
+
+    &:hover, &:active, &:focus{
+        background: $brand-primary--dark;
+    }
+}
+#cookie-bar .cb-policy {
+    background: $medium-grey;
+}
+
+@media screen and (max-width: 768px){
+    #cookie-bar.fixed.bottom {
+        bottom: 0px;
+        width: 100%;
+        left: auto;
+        right: 0px; 
+        top: auto;
+        border-radius: 0;
+    }
+    #cookie-bar .cb-enable {
+        background: $brand-primary;
+        display: inline-block;
+        width: 45%;
+    }
+    #cookie-bar .cb-policy {
+        background: $medium-grey;
+        display: inline-block;
+        width: 40%;
+    }
+}
