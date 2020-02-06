@@ -160,7 +160,7 @@
         top: 50%;
     }
     &::after{
-        content: "";
+        content: none;
         right: 0;
         background: $dark-grey;
         width:84%;

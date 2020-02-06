@@ -21,6 +21,7 @@ footer{
     padding: 6rem 0 6rem 0;
     margin-top: 0px;
     background: $bg-dark;
+    background-image: url("../img/bg-footer-main.png");
     position: relative;
     z-index: 1;
 }
@@ -30,7 +31,7 @@ footer{
 }
 @media screen and (min-width:992px){
     .footer-main{
-        padding: 10rem 0 10rem 0;
+        padding: 8rem 0 8rem 0;
     }
     .footer-main__col{
         text-align: center;
@@ -43,38 +44,33 @@ footer{
 .footer-main__title{
     color: $text-white;
     position: relative;
-    padding-bottom: 3rem;
     margin-bottom: 3rem;
-    font-size: 4.2rem;
-    text-transform: uppercase;
+    font-size: 3.6rem;
     font-weight: 700;
-
-    &::after{
-        content: "";
-        background: $bg-white;
-        height: 4px;
-        width: 60px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-    }
+    text-align: center;
+}
+.footer-main__subTitle{
+    color: $text-white;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
 }
 .footer-main__h5{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: $text-white;
     margin-bottom: 1.2rem;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 .footer-main__link{
     color: $text-white;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin: 0;
-    line-height: 2.8rem;
+    line-height: 3rem;
 
     &:hover, &:active, &:focus{
         color: $text-white;
@@ -84,10 +80,10 @@ footer{
 .footer-main__text{
     color: $text-white;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin: 0;
-    line-height: 2.8rem;
+    line-height: 3rem;
 }
 .footer-main__label{
     color: $text-white;
@@ -96,10 +92,13 @@ footer{
 }
 .footer-main__input{
     height: 5.6rem;
+    font-size: 1.8rem;
 }
 .footer-main__form-text{
     color: $text-white;
     margin-bottom: 2rem;
+    text-align: right;
+    padding-top: 10px;
 
     & a{
         color: $text-white;
@@ -110,8 +109,11 @@ footer{
         }
     }
 }
-.footer-main__btn{
-    width: 100%;
+.footer-main__formGroup{
+    flex-grow: 1;
+    margin: 10px 0;
+    margin-right: 20px;
+    padding: 0;
 }
 .footer-main__contact{
     color: $text-white;
@@ -121,12 +123,21 @@ footer{
     margin: 1rem 0;
     font-size: 2.4rem;
 }
+.footer-main__btn{
+    margin: 10px 0;
+}
 .footer-main__address{
     padding: 3rem 0 4rem 0;
 }
 .footer__img{
     display: block;
     margin-top: 10rem;
+}
+
+.footer-main__form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width:991px){
@@ -173,12 +184,22 @@ footer{
 }
 
 /* ========================================================================== */
+/* FOOTER LINKS */
+/* ========================================================================== */
+
+.footer-links{
+    background: $bg-dark;  
+    padding: 6rem 0 6rem 0; 
+}
+
+
+/* ========================================================================== */
 /* COYPRIGHT */
 /* ========================================================================== */
 
 .copyright{
     background: $bg-dark;
-    border-top: 1px solid rgba(255,255,255,0.1);
+
 }
 .copyright__wrap{
     padding: 2.5rem 0;
@@ -205,7 +226,11 @@ footer{
 .copyright__pull{
     text-align: right;
 }
-
+.copyright__text{
+    color: $text-white;
+    opacity: 0.5;
+    padding-bottom: 2.5rem;
+}
 
 @media screen and (max-width:768px){
     .copyright{

@@ -27,25 +27,29 @@ html(lang=lang)
     body
         include _nav.pug
         section.heading
-            h1.heading__title Střediska
-            .heading__symbols
+            h1.heading__title Investiční přístup
 
         main
             .container
-                a.centers-single.post__image-container(href="#")
-                    .centers-single__content
-                        h3.centers-single__title Středisko technologií
-                        p.centers-single__text Středisko technologií realizuje dodávky a montáže jak komplexních technologických celků, tak jejich dílčích částí...
-                        .btn.-transparent.centers-single__link Více informací #[span.arrow-icon.white.btn__icon]
-                    img.centers-single__img.post__featured-image(src=URLbase+"img/thumb-centers1.jpg" alt="Středisko technologií" title="Středisko technologií")
-
-
-                a.centers-single.post__image-container(href="#")
-                    .centers-single__content
-                        h3.centers-single__title Středisko technologií
-                        p.centers-single__text Středisko technologií realizuje dodávky a montáže jak komplexních technologických celků, tak jejich dílčích částí...
-                        .btn.-transparent.centers-single__link Více informací #[span.arrow-icon.white.btn__icon]
-                    img.centers-single__img.post__featured-image(src=URLbase+"img/thumb-centers2.jpg" alt="Středisko technologií" title="Středisko technologií")
+                article.post.--narrow
+                    p text
+        
+        section.ourTeam
+            .container
+                .row
+                    .col-12.col-sm-1
+                    .col-12.col-sm-5
+                        .ourTeam__imgWrap
+                            img.ourTeam__img(src=URLbase+"img/team1.jpg")
+                    .col-12.col-sm-1
+                    .col-12.col-sm-5
+                        h4.ourTeam__subTitle Poznejte náš tým
+                        h1.ourTeam__title Mgr.Ing.Milan Koštůr,LL.M. 
+                        p.ourTeam__text Působil skoro celou svou dosavadní profesní kariéru v oblasti kapitálových trhů se zaměřením na asset management a to jak v rámci České republiky, tak oblasti evropských hedgeových fondů. 
+                        .ourTeam__buttons
+                            a.btn.-dark.ourTeam__btn(href="#") Více informací #[span.arrow-icon.white.btn__icon]
+                            a.btn.-ghost(href="#") Další členové
+               
 
 
         include _footer.pug

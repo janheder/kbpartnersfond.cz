@@ -118,7 +118,7 @@ img{
 
 main{
     background: $bg-white;
-    padding: 10rem 0;
+    padding: 8rem 0;
 }
 
 @media screen and (max-width:768px){
@@ -144,7 +144,7 @@ main{
 }
 
 .container{
-    max-width: 1180px;
+    max-width: 1340px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -225,4 +225,5 @@ main{
 \*------------------------------------*/
 
 @import "_modal";
+
 

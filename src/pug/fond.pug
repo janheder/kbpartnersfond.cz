@@ -1,0 +1,74 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.heading
+            h1.heading__title Investiční přístup
+
+        main
+            .container
+                article.post.--narrow
+                    p K & B Partners,alternativní investiční fond,s.r.o je hlavním partnerem společnosti švýcarské jedničky v internetovém bankovnictví Swissquote Ltd,která  je dceřinou společností Swissquote Bank se sídlem v Londýně a přináší obchodníkům se sídlem v Evropské unii vynikající likviditu a provádění Swissquote na Forexu, komoditách, indexech a dluhopisech. Swissquote Ltd je ve Velké Británii autorizován a regulován úřadem Financial Conduct Authority, FCA Register number 562170 . 
+
+                    p Registrována jako společnost v Anglii a Walesu, číslo 07710095, DIČ 133445531.
+        
+                    section.postFiles
+
+                        .postFiles__single
+                            a.postFiles__link(href="#")
+                                img.postFiles__img(src=URLbase+"img/file.svg" alt="#")
+                                .postFiles__title K&B Partners Fond-výpis OR.pdf 
+                                .btn.btn-small.-dark.postFiles__btn Stáhnout
+
+                        .postFiles__single
+                            a.postFiles__link(href="#")
+                                img.postFiles__img(src=URLbase+"img/file.svg" alt="#")
+                                .postFiles__title K&B Partners Fond-výpis OR.pdf 
+                                .btn.btn-small.-dark.postFiles__btn Stáhnout
+        
+        section.ourTeam
+            .container
+                .row
+                    .col-12.col-sm-1
+                    .col-12.col-sm-5
+                        .ourTeam__imgWrap
+                            img.ourTeam__img(src=URLbase+"img/team1.jpg")
+                    .col-12.col-sm-1
+                    .col-12.col-sm-5
+                        h4.ourTeam__subTitle Poznejte náš tým
+                        h1.ourTeam__title Mgr.Ing.Milan Koštůr,LL.M. 
+                        p.ourTeam__text Působil skoro celou svou dosavadní profesní kariéru v oblasti kapitálových trhů se zaměřením na asset management a to jak v rámci České republiky, tak oblasti evropských hedgeových fondů. 
+                        .ourTeam__buttons
+                            a.btn.-dark.ourTeam__btn(href="#") Více informací #[span.arrow-icon.white.btn__icon]
+                            a.btn.-ghost(href="#") Další členové
+               
+
+
+        include _footer.pug
+
+        include _js-include.pug
+        
