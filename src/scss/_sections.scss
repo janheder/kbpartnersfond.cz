@@ -530,3 +530,14 @@ article.post q{
         width: 50%;
     }
 }
+
+.kontaktyImg{
+    margin-bottom: 0;
+    display: flex;
+
+    align-items: center;
+    img{
+        margin-right: 20px;
+        height: 220px;
+    }
+}
