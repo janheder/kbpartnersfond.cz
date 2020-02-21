@@ -169,6 +169,7 @@
     .navbar-main{
         height: 50px;
         padding: 0;
+        background: white;
         @include flexbox();
         @include flex-direction(row);
     }
